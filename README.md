@@ -22,3 +22,6 @@ Struts2,Hibernate,Spring三大框架的整合总是很麻烦，在此提供一�
 9.整个包可直接导入Myeclipse继续编辑，war文件可直接放入tomcat部署。
 
 10.非maven版本参见https://github.com/shenzhanwang/MySSH
+
+效果图：
+ ![alt text](https://github.com/shenzhanwang/MySSH/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.png)
