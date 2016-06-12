@@ -7,7 +7,7 @@ Struts2,Hibernate,Spring三大框架的整合总是很麻烦，在此提供一�
 
 2.前端框架集成了Bootstrap3.3.5，Jquery1.12.3,集成了Bootstrap插件Bootgrid数据表格实现分页，使用Bootstrap的datetimepicker插件实现日期时间选择；
 
-3.数据库使用Mysql中自带的的sakila数据库，使用前，请将MySSH/WebRoot/WEB-INF中的applicationContext.xml中的数据库密码设置为自己的；
+3.数据库使用Mysql中自带的sakila数据库，使用前，请将MySSH/WebRoot/WEB-INF中的applicationContext.xml中的数据库密码设置为自己的；
 
 4.实现了sakila中的单表的增删改查和跨表查询，跨表查询包括了hibernate的1-N和1-1双向映射；
 
