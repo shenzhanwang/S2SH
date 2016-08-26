@@ -1,4 +1,4 @@
-# SSH_maven
+# SSH
 Struts2,Hibernate,Spring三大框架的整合总是很麻烦，在此提供一个已经整合好三大框架的包，可以直接下载导入Myeclipse使用，项目基于Maven做依赖管理。
 
 其中包含的内容如下：
@@ -24,4 +24,4 @@ Struts2,Hibernate,Spring三大框架的整合总是很麻烦，在此提供一�
 10.要使用SpringMVC+Mybatis+spring的整合，参见[https://github.com/shenzhanwang/SSM](https://github.com/shenzhanwang/SSM)  
 
 效果图：
- ![alt text](https://github.com/shenzhanwang/MySSH/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.png)
+ ![alt text](https://github.com/shenzhanwang/SSH/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.png)
