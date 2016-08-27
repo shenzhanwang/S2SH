@@ -48,7 +48,7 @@
 				<prop key="hibernate.dialect">
 					org.hibernate.dialect.MySQL5InnoDBDialect</prop>
 				<!--是否根据Hiberante映射创建数据表 -->
-				<prop key="hibernate.hbm2ddl.auto">validate</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>	
 				<prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop> 			

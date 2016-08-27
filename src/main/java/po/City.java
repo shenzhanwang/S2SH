@@ -27,9 +27,21 @@ public class City {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date last_update;
 	
+	
+	
+	public City() {
+	}
+	
+
+	public City(String city, Date last_update, Country country) {
+		this.city = city;
+		this.last_update = last_update;
+		this.country = country;
+	}
+
 	//1-N，N端，注解外键列
 	@ManyToOne(targetEntity=Country.class)
-	@JoinColumn(name="country_id",referencedColumnName="country_id",nullable=false)
+	@JoinColumn(name="country_id")
 	private Country country;
 	
 	public Country getCountry() {

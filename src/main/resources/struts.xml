@@ -62,6 +62,21 @@
 	<action name="staffandstore" class="action.Staff_storeAction">
 		<result name="success" type="json"></result>
 	</action>
+	<action name="getcountry" class="action.CountryAction" method="getcountry">
+		<result name="success" type="json"></result>
+	</action>
+	
+	<action name="addcountry" class="action.CountryAction" method="addcountry">
+		<result name="success">aaa.jsp</result>
+	</action>
+	
+	<action name="deletecountry" class="action.CountryAction" method="deleteCountry">
+		<result name="success">BBB.jsp</result>
+	</action>
+	
+	<action name="updatecountry" class="action.CountryAction" method="updatecountry">
+		<result name="success">BBB.jsp</result>
+	</action>
 	<action name="upload" class="action.UploadAction">
 		<interceptor-ref name="fileUpload">
 			<param name="allowedTypes">image/png,application/vnd.ms-excel</param>

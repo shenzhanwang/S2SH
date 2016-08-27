@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="SSH_maven Maven Webapp">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SSH">
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
-        <property name="context-root" value="/SSH_maven"/>
-        <property name="java-output-path" value="/SSH_maven Maven Webapp/src/main/webapp/WEB-INF/classes"/>
+        <property name="java-output-path" value="/SSH/src/main/webapp/WEB-INF/classes"/>
+        <property name="context-root" value="/SSH"/>
     </wb-module>
 </project-modules>
