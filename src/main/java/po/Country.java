@@ -30,7 +30,7 @@ public class Country {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date last_update;
 	//双向1-N映射，1端放弃关系控制
-	@OneToMany(targetEntity=City.class,mappedBy="country",fetch=FetchType.LAZY,cascade=CascadeType.ALL,orphanRemoval=true)
+	@OneToMany(targetEntity=City.class,mappedBy="country",fetch=FetchType.EAGER,cascade=CascadeType.ALL,orphanRemoval=true)
 	private Set<City> citys=new HashSet<City>();
 	
 	public Set<City> getCitys() {

@@ -30,15 +30,10 @@
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
 		p:dataSource-ref="dataSource">
 		<!-- mappingResources用来列出全部映射文件 -->
-		<property name="annotatedClasses">
+		<!-- 依赖注入映射文件，扫描包-->
+		<property name="packagesToScan">
 			<list>
-				<!-- 以下用来列出所有的PO类-->
-				<value>po.Staff</value>
-				<value>po.Actor</value>
-				<value>po.Rental</value>
-				<value>po.Country</value>
-				<value>po.City</value>
-				<value>po.Store</value>
+				<value>po</value>
 			</list>
 		</property>
 		<!-- 定义Hibernate SessionFactory的属性 -->
@@ -48,7 +43,7 @@
 				<prop key="hibernate.dialect">
 					org.hibernate.dialect.MySQL5InnoDBDialect</prop>
 				<!--是否根据Hiberante映射创建数据表 -->
-				<prop key="hibernate.hbm2ddl.auto">validate</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>	
 				<prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop> 			

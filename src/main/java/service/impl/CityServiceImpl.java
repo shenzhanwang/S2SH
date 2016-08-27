@@ -21,12 +21,12 @@ public class CityServiceImpl implements CityService{
 	}
 
 	public List<City> getCountrysGroupbyid(int a, int b) {
-		List<City> list=cityDao.findByPage("from City as c order by c.country.country",a,b);
+		List<City> list=cityDao.findByPage("from City as c join fetch c.country",a,b);
 		return list; 
 	}
 
 	public List<City> getAllCountrysgroupbyid() {
-		List<City> list=cityDao.find("from City as c order by c.country.country");
+		List<City> list=cityDao.find("from City as c join fetch c.country");
 		return list;
 	}
 
