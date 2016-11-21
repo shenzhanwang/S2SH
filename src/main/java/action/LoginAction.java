@@ -42,11 +42,11 @@ public class LoginAction {
 		Map<String, Object> s=ctx.getSession();
 		String ver2 = (String)s.get("rand");
 		System.out.println(ver2);
-		String rname=userservice.getNameByPassword(password);
-		if(username==null)
+		String pwd=userservice.getPWDByname(username);
+		if(pwd==null)
 		return "login";
 		if(ver2.equalsIgnoreCase(pic)){
-			if(rname!=null&&username.equals(rname))
+			if(pwd!=null&&pwd.equals(password))
 			{
 				s.put("username", username);
 				return "ok";

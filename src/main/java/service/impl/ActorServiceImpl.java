@@ -7,11 +7,16 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import dao.ActorDao;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
 import po.Actor;
 import poi.WriteExcel;
 import service.ActorService;
+import dao.ActorDao;
 @Service("actorservice")
+@Transactional(propagation=Propagation.REQUIRED,isolation=Isolation.DEFAULT,timeout=5)
 public class ActorServiceImpl implements ActorService{
 	@Autowired
 	private ActorDao actorDao;

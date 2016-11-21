@@ -1,11 +1,17 @@
 package service.impl;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import dao.RentalDao;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
 import po.Rental;
 import service.RentalService;
+import dao.RentalDao;
+@Transactional(propagation=Propagation.REQUIRED,isolation=Isolation.DEFAULT,timeout=5)
 @Service("rentalservice")
 public class RentalServiceImpl implements RentalService{
 	@Autowired
